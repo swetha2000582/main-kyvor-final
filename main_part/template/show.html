@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.bootstrapdash.com/demo/Worksbot/template/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 13:01:40 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>User data</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'vendors2/iconfonts/font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors2/css/vendor.bundle.base.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors2/css/vendor.bundle.addons.css' %}">
+  
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'css3/style1.css' %}">
+  <!-- endinject -->
+  
+</head>
+<body>
+<div class="main-panel">
+    <div class="content-wrapper">
+      <div class="row">
+        <div class="col-12 grid-margin">
+  
+      
+        <div class="card">
+          <div class="card-body">
+  
+            <div class="page-header">
+              <h3 class="page-title">
+                Data of User
+              </h3>
+  
+            </div>
+            <div class="container">
+                <a href="{% url 'index' %}"><button type="submit" class="btn btn-primary">back</button></a>
+                <br><br>
+              <form action="/show/{{items.id}}" method="POST" enctype="multipart/form-data" class="signin-form">
+                {% csrf_token %}
+                <div class="form-group">
+                  <i class="fa fa-asterisk text-primary">First Name</i>&nbsp;&nbsp;
+                  {{items.first_name}}
+                
+                </div><br>
+                <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Last Name</i>&nbsp;&nbsp;
+                    {{items.last_name}}
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Short Name</i>&nbsp;&nbsp;
+                    {{items.short_name}}
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary"> title</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{items.titleof}}
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Email Id</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{items.email_id}}
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Contact</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{items.contacts}}
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Contact ext</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{items.contacts_ext}}
+                  </div><br>
+                
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">your image</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% if items.image %}
+                    <img src="{{ items.image.url }}" style="height: 60px; width: 80px;">
+                    {% endif %}
+                    
+                  </div>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Join date</i>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    {{items.join_date}}
+                  
+                    
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Team</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{items.team}}
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Job title</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {{items.job_title}}>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Last Login</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  
+                    {{items.last_date}}
+                  </div><br>
+                <br>
+               
+                
+           
+            </form>
+            
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  </div>
+ <script src="{% static 'vendors2/js/vendor.bundle.base.js' %}"></script>
+  <script src="{% static 'vendors2/js/vendor.bundle.addons.js' %}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="{% static 'js3/off-canvas.js' %}"></script>
+  <script src="{% static 'js3/hoverable-collapse.js' %}"></script>
+  <script src="{% static 'js3/misc.js' %}"></script>
+  <script src="{% static 'js3/settings.js' %}"></script>
+  <script src="{% static 'js3/todolist.js' %}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{% static 'js3/dashboard.js' %}"></script>
+
+
+
+
+
+
+</body></html>

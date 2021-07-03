@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.bootstrapdash.com/demo/Worksbot/template/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 13:01:40 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Adding</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'vendors2/iconfonts/font-awesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors2/css/vendor.bundle.base.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors2/css/vendor.bundle.addons.css' %}">
+  
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'css3/style1.css' %}">
+  <!-- endinject -->
+  
+</head>
+<body>
+<div class="main-panel">
+    <div class="content-wrapper">
+      <div class="row">
+        <div class="col-12 grid-margin">
+  
+      
+        <div class="card">
+          <div class="card-body">
+  
+            <div class="page-header">
+              <h3 class="page-title">
+                 Create your data
+              </h3>
+  
+            </div>
+            <div class="container">
+              <form action="/forms" method="POST" enctype="multipart/form-data" class="signin-form">
+                {% csrf_token %}
+                <div class="form-group">
+                  <i class="fa fa-asterisk text-primary">First Name</i>
+                  <input type="text" class="form-control" name="enter_first" placeholder="Enter_First name"
+                    class="fa fa-asterisk text-primary" required>
+                </div><br>
+                <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Last Name</i>
+                    <input type="text" class="form-control" name="enter_last" placeholder="Enter_Last name"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Short Name</i>
+                    <input type="text" class="form-control" name="enter_short" placeholder="Enter_Short name"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary"> title</i>
+                    <input type="text" class="form-control" name="titleof" placeholder="Enter_Mr/Ms"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Email Id</i>
+                    <input type="email" class="form-control" name="enter_email" placeholder="Enter_Email id"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Contact</i>
+                    <input type="number" class="form-control" name="enter_contact" placeholder="Enter_Contact"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Contact ext</i>
+                    <input type="number" class="form-control" name="enter_contact_ext" placeholder="Enter_Contact extension"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Upload your image</i>
+                    <input type="file" name="images">
+                  </div>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Join date</i>
+                  
+                    <input type="date" id="recipient-name" name="datetime">
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Team</i>
+                    <input type="text" class="form-control" name="enter_team" placeholder="Enter_Team"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Job title</i>
+                    <input type="text" class="form-control" name="enter_job_title" placeholder="Enter_Job title"
+                      class="fa fa-asterisk text-primary" required>
+                  </div><br>
+                  <div class="form-group">
+                    <i class="fa fa-asterisk text-primary">Last Login</i>
+                  
+                    <input type="datetime-local" id="recipient-name" name="last_datetime">
+                  </div><br>
+                <br>
+               
+              <button type="submit" class="btn btn-primary">Submit</button>
+           
+            </form>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  </div>
+ <script src="{% static 'vendors2/js/vendor.bundle.base.js' %}"></script>
+  <script src="{% static 'vendors2/js/vendor.bundle.addons.js' %}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="{% static 'js3/off-canvas.js' %}"></script>
+  <script src="{% static 'js3/hoverable-collapse.js' %}"></script>
+  <script src="{% static 'js3/misc.js' %}"></script>
+  <script src="{% static 'js3/settings.js' %}"></script>
+  <script src="{% static 'js3/todolist.js' %}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{% static 'js3/dashboard.js' %}"></script>
+
+
+
+
+
+
+</body></html>
